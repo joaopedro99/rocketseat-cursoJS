@@ -1,1 +1,27 @@
-!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var endereco = {
+rua: "Rua dos pinheiros",
+numero: 1293,
+bairro: "Centro",
+cidade: "São Paulo",
+uf: "SP"
+};
+console.log(endereco)
+function myFunction (cidade, uf, bairro, rua, numero)
+{
+    return "O usuário mora em " + cidade + "/" + uf + ", no bairro" + bairro + ", na rua " + rua + " com numero " + numero;
+ 
+}
+document.write (myFunction(endereco.cidade, endereco.uf, endereco.bairro, endereco.rua, endereco.numero));
+    </script>
+</body>
+</html>
